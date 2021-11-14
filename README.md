@@ -6,7 +6,7 @@ Proyecto final para el curso avanzado del diplomado en desarrollo web Duoc UC,  
 Diego Altamirano MLX
  
 ## URL para ver el resultado
-Para ver proyecto en directo puedes verlo aquí 
+Para ver proyecto en directo puedes verlo aquí https://dgmlx.github.io/Proyecto-responsive-curso-avanzado/
 
 ## Contratación
 Si quieres contratarme puedes escribirme para consultas
