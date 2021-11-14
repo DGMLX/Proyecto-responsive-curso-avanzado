@@ -1,0 +1,305 @@
+/*fuentes*/
+/*Carga de fuente remota*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans:wght@700&display=swap');
+
+/*estilos reset body, p, h1, h2 ->elementos que tienen por defecto margen y relleno*/
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+/*id=100
+  etiqueta=1
+  total 101
+  1,0,1
+*/
+#pagina p{
+    color:deeppink;
+}
+/*100+1+1=102*/
+#pagina article p{
+    color:black;
+}
+
+
+/*clases =10
+  etiquetas =1
+  total 11
+        0,1,1 */
+.main__container p{
+    color:chocolate;
+}
+.main__container--destacado{
+    background-color: burlywood;
+    color:black;
+}
+/*selector de etiqueta 1 punto
+2*1=2*/
+
+
+.main__container--destacado img{
+    float: left; /* right*/
+    width: 250px;
+    margin: 10px;
+}
+/*bloque__elemento*/
+.nav__principal ul {
+    list-style: none;
+    display: flex; /*el display flex se aplica al elemento PADRE*/
+    flex-direction: row; /*row->fila column->columna*/
+    justify-content: center; /*left /right/center*/
+    
+}
+.nav__principal li {
+    border:solid #000 1px;
+   /* display: inline-block; block-defecto, inline, inline-block*/
+    padding: 1rem;
+}
+
+.boton__subir {
+   position:relative; /*static. relative, absolute, fixed*/
+   bottom: 80px; /*top, left, right , bottom*/
+   right: 0;
+   bottom: 1rem;
+   z-index: 1; /*mayor a 0*/
+   float:right;
+
+}
+/*contenedor padre de la galeria*/
+.seccion-galeria__col{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/*elementos hijos */
+.seccion-galeria__col picture{
+    width: 40%;
+    margin-right: 0.3rem;
+  
+
+}
+.seccion-galeria__col img{
+    width: 100%;
+    height: auto;
+    
+}
+
+
+/*importar tipografía*/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    /*font-family: Arial, Helvetica, sans-serif; fuentes locales*/
+    color: #707070;;
+    font-size:1rem; /* 16px *1 =16*/
+
+}
+
+header{
+    height: 5rem;
+}
+h1{ 
+    font-family: 'Work Sans', Arial, sans-serif; /*fuente remota*/
+   font-size:2rem; /*32px ->16*2*/
+   color:#000;
+   letter-spacing: -1px; /*espacio entre letras*/
+   
+}
+
+/*Clases para color*/
+.primario{ color:#F9004D}
+.secundario{color:#FFC915}
+.boton{ 
+    background-color:#F9004D; /*fondo*/
+    color:#fff; /*texto*/
+    display: block; /*transforma un elemento de linea - bloque*/
+    padding: 0.5rem; /*relleno*/
+    margin:0.5rem; /*margen*/
+    border:none;
+}
+/*pseudoclase ->define estilos a partir de un comportamiento o evento
+:hover ->sobre
+:active ->presionar
+*/
+
+h2{ 
+    font-family: 'Work Sans', Arial, sans-serif; /*fuente remota*/
+   font-size:1.8rem;
+   color:#000;
+}
+
+/*estilos para estructura*/
+header,footer{ background-color: #000;}
+
+footer{ 
+    text-align: center;
+    padding: 1rem;
+}
+
+/*selector padre - hijo*/
+.seccion-diplomado article , .seccion-contacto article, .seccion-galeria{ 
+        text-align: center;
+}
+
+
+/*selector de grupos, separado por comas*/
+input , textarea {
+    display: block;
+    padding: 0.5rem;
+    width: 96%;
+    margin: 0.5rem;
+    
+}
+/*alternativa con float*/
+header{
+     overflow:hidden; /*hack para calcular el alto del elemento con flotante*/
+    padding: 1rem;
+    }
+.logotipo{ float: left; /*posiciona elemento a la izquierda*/}
+.menu-principal{ display:none;}
+.boton__menu{ float: right; /*posiciona elemento a la derecha*/}
+
+/*alternativa con flex
+#top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}*/
+
+.embed-responsive{ /*contenedor*/
+position: relative;
+height: 0;
+padding-bottom:56.25% ; /*16:9 ->9/16*100 4:3=75%*/
+overflow: hidden;
+width: 95%;
+margin-left: 2.5%;
+}
+.embed-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3rem;
+}
+.embed-responsive{
+margin-bottom: 2rem;
+}
+.banner{ display: none;}
+
+/* ESTILOS PROPIOS*/
+
+.seccion-diplomado article h1{
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 2rem;
+}
+.seccion-diplomado article p span{
+    color: #F9004D;
+}
+.seccion-diplomado article p{
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.seccion-diplomado article a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight:bold;
+    border-radius: 0.2rem;
+    margin-bottom: 1.5rem;
+}
+.seccion-galeria h1{
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+.seccion-contacto article h1{
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 2rem;
+}
+.seccion-contacto article p{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom:1rem;
+}
+.seccion-contacto article form input,textarea{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+.seccion-contacto article form input[type=submit]{
+text-transform: uppercase;
+font-weight: bold;
+margin-top: 1rem;
+margin-bottom: 2rem;
+}
+.seccion-contacto article p span{
+    color: #F9004D;
+}
+footer{
+    width: 100%;
+    height:5rem;
+}
+footer a{
+    padding-left: 0.3rem;
+}
+footer p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+#mapa{
+    margin-bottom: 1.5rem;
+
+}
+.footer-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*----------------------animacion/transform/transition----------------------------------*/
+
+.seccion-galeria__col source,img:hover{
+    opacity:0.8;
+    border-radius: 50%;
+    transition: all 2s;
+}
+.boton:hover{
+    background-color: #FFC915;
+    transition: all 2s;
+
+}
+
+@keyframes animation1{
+    0%{
+        transform: scale(0.2);
+        color:yellow;
+    }
+    25%{
+        transform: scale(0.4);
+        color: violet;
+    }
+    50%{
+        transform: scale(0.6);
+        color: tomato;
+    }
+    75%{
+        transform: scale(0.8);
+        color:chartreuse;
+    }
+    100%{
+        transform: scale(1);
+        color: white;
+    }
+
+}
+.titulo-bienvenido{
+    animation-name: animation1;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+
+
+}
+

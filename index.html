@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio web Diplomado</title>
+    <link href="css/estilos.css" rel="stylesheet"><!--movil-->
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width:375px)">
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width:769px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+      </head>
+<body>
+    <!-- uso del ID como  identificador de un elemento
+         en este caso cabecera (top)-->
+    <header id="top">
+        <picture class="contenedor__picture">
+            <source srcset="images/svg/logodesktop.svg" media="(min-width:769px)">
+            <source srcset="images/svg/logotablet.svg" media="(min-width:375px)">
+           
+            <img src="images/svg/logotipo.svg" class="logotipo">
+        </picture>
+        <nav>
+            <img src="images/svg/menu-movil.svg" class="boton__menu">
+             <ul class="menu-principal">
+                 <li><a href="">Home</a></li>
+                 <li><a href="">Contenidos</a></li>
+                 <li><a href="">Contacto</a></li>
+             </ul>
+        </nav>
+    </header>
+    
+    <section class="banner">
+        <h2 class="titulo-bienvenido">Bienvenidos</h2>
+    </section>
+
+    <main>
+       <section  class="seccion-diplomado">      
+        <article>
+            <h1 class="animate__heartBeat">Diplomado <span class="primario">DW</span> 
+                <div class="secundario">DuocUC</div></h1>
+            <p>Hoy veremos <span>algunos elementos</span> que son escenciales a reforzar para crear 
+            en un sitio web bien estructurado. Además veremos herramientas de código, 
+            que nos permitirán adaptar nuestro sitio a versiones responsivas, 
+            y hacer de nuestros proyectos lo más integral posible para el resto de las 
+            plataformas digitales que existen hoy </p>
+            <a href="#" class="boton">Ver Más </a>
+        </article>
+
+        <!--Video de youtube-->
+        <div class="embed-responsive">
+           <iframe  src="https://www.youtube.com/embed/FoCNedUiVqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+       </section>
+       
+       <!--seccion galería-->
+       <section class="seccion-galeria">
+           <article>
+            <h1 class="animate__heartBeat">Galeria</h1>  
+            <div class="seccion-galeria__col">
+
+                <picture>
+                    <source srcset="images/jpg/desktop/img1.jpg" media="(min-width:769px)">
+                    <source srcset="images/jpg/tablet/img1.jpg" media="(min-width:375px)"> 
+                    <img src="images/jpg/movil/img1.jpg" alt="Foto 1">
+                    
+                </picture>
+                <picture> 
+                    <source srcset="images/jpg/desktop/img2.jpg" media="(min-width:769px)">
+                    <source srcset="images/jpg/tablet/img2.jpg" media="(min-width:375px)">
+                    <img src="images/jpg/movil/img2.jpg" alt="Foto 2">
+                    
+                </picture>
+                <picture> 
+                    <source srcset="images/jpg/desktop/img3.jpg" media="(min-width:769px)">
+                    <source srcset="images/jpg/tablet/img3.jpg" media="(min-width:375px)">
+                    <img src="images/jpg/movil/img3.jpg" alt="Foto 3">
+                    
+                </picture>
+                <picture class="span3">  
+                    <source srcset="images/jpg/desktop/img4.jpg" media="(min-width:769px)">
+                    <source srcset="images/jpg/tablet/img4.jpg" media="(min-width:375px)">
+                    <img class="img4" src="images/jpg/movil/img4.jpg" alt="Foto 4">
+                       
+                </picture>
+
+
+          </div>
+           </article>
+       </section>
+
+       <section class="seccion-contacto">
+         <article>
+            <h1 class="animate__heartBeat">Contacto</h1>
+            <p>Si no tienes dudas <span>genial</span>, quiere decir que lo hemos hecho muy bien, si estas desesperado/a llena este formulario.</p>
+            <div class="grid-contacto">
+                <form action="enviar.php">
+                    <input type="text" placeholder="Nombre" name="nombre">
+                    <input type="email" placeholder="Email" name="correo">
+                    <input type="text" placeholder="Asunto" name="asunto">
+                    <textarea placeholder="Mensaje"></textarea>
+                    <input type="submit" value="Enviar Formulario"  class="boton">
+                </form>
+                </article>
+                <!-- incluir mapa de google-->
+                <div class="embed-responsive" id="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.5606309135505!2d-70.62128878480105!3d-33.434697480778496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf7dce1f23d9%3A0x4799c3cc9798c0fb!2sMiguel%20Claro%20578%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1sde!2scl!4v1627519948821!5m2!1sde!2scl"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+
+       </section>
+     
+    </main>
+    <!-- vínculo de ancla , al presionar busca el ID = top-->
+    <a href="#top" class="boton__subir"><img src="images/svg/boton-subir.svg"></a>
+
+    <footer class="footer-flex">
+        <nav>
+           <a href="#"><img src="images/svg/instagram.svg"></a>
+           <a href="#"><img src="images/svg/twitter.svg"></a>
+           <a href="#"><img src="images/svg/spotify.svg"></a>
+           <a href="#"><img src="images/svg/icono1.svg"></a>
+        </nav>
+        <div>
+          <p> © 2021. Ningún derecho reservado</p> 
+        </div>
+    </footer>
+
+</body>
+</html>

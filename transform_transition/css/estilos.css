@@ -1,0 +1,34 @@
+.cuadrado{
+    width: 200px;
+    height: 200px;
+    background-color:salmon;
+    /*rotate(50deg) deg--> grados 
+     translate() = por defecto es translateX
+     TRANSLATE (X,Y)
+     scale(2) 2 veces mas grande
+     transform:scale() rotate();*/
+    margin-left: 300px;
+    transform:scale(2); 
+    /* transform-origin:center por defecto*/
+    transform-origin: top left;
+}
+.cuadrado:hover{
+    transform: scale(1.5);
+    transition: transform 2s;
+    background-color: teal;
+}
+.circulo{ /* estado de origen*/
+    width: 200px;
+    height: 200px;
+    background-color: slateblue;
+    border-radius: 50%;
+    transition: all 2s;
+    margin-left: 200px;
+    margin-top: 200px;
+}
+/*.circulo:hover,*/ .circulo:active{ /* estado de destino*/
+    opacity:0;
+    transform: scale(2);
+    transition: all 2s ; /* transition: opacity 2s, transform 1s*/ 
+}
+

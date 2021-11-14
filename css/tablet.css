@@ -1,0 +1,68 @@
+.menu-principal { display: flex; justify-content: flex-end; align-items: center;}
+.boton__menu{ display: none;}
+.menu-principal li{
+    display: inline-block;
+}
+.menu-principal a {
+    color:#fff;
+    font-family: 'Work Sans', Arial, sans-serif; /*fuente remota*/
+    text-decoration: none;
+    padding-right: 1rem;
+    font-weight: normal;
+}
+header{
+    height: 3.68rem;
+}
+.seccion-diplomado{
+    width: 70%;
+    margin: 0 auto;
+}
+.seccion-galeria{
+    width: 70%;
+    margin: 0 auto;
+}
+.seccion-contacto{
+    width: 70%;
+    margin: 0 auto;
+}
+.banner{ display: block;
+        background-image: url(../images/jpg/banner_tablet.jpg);
+        background-size: cover;
+        height:10rem;
+    }
+.banner h2{
+    display: none;
+}
+body .seccion-diplomado article h1, .seccion-galeria article h1, .seccion-contacto article h1{
+    font-size: 3.75rem;
+}
+.seccion-contacto article p{
+    font-size: 1.56rem;
+}
+.seccion-contacto article form input, textarea{
+    font-size: 1.25rem;
+    padding: 1rem;
+    
+}
+body .seccion-contacto article form input[type=submit]{
+    font-size:0.94rem;
+}
+#mapa{
+    display: none;
+}
+.boton__subir{
+    display: none;
+}
+
+.footer-flex{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.seccion-contacto{
+    margin-bottom:5rem
+}
+footer{
+    height: 9.18rem;
+}
